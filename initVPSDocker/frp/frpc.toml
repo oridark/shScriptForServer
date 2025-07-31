@@ -1,0 +1,26 @@
+serverAddr = "frps.movietosee.top"
+serverPort = 9000
+auth.token = '13056261333as'
+
+[[proxies]]
+name = "145-ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 22145
+
+# socks代理
+[[proxies]]
+name = "145-socks5-localarea"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 40000
+remotePort = 40145
+
+# socks代理
+[[proxies]]
+name = "145-socks5-local"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 40001
+remotePort = 41145
